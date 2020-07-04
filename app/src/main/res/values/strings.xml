@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Kotlin-TabLayout</string>
 
-    <string name="title_home">Home</string>
-    <string name="title_aboutUs">About Us</string>
-    <string name="title_contactUs">Contact Us</string>
+    <string name="title_home">Registro</string>
+    <string name="title_aboutUs">Alarmas</string>
+    <string name="title_contactUs">Datos</string>
 
 </resources>

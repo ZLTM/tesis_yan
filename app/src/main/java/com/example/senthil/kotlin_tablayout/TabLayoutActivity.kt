@@ -24,9 +24,9 @@ class TabLayoutActivity : AppCompatActivity() {
 
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(HomeFragment(),"Home")
-        adapter.addFragment(AboutUsFragment(), "About Us")
-        adapter.addFragment(ContactUsFragment(), "Contact Us")
+        adapter.addFragment(HomeFragment(),"Registro")
+        adapter.addFragment(AboutUsFragment(), "Alarmas")
+        adapter.addFragment(ContactUsFragment(), "Datos")
         viewPager.adapter = adapter
     }
 
