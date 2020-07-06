@@ -7,12 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.senthil.kotlin_tablayout.R
 
-class AboutUsFragment : Fragment() {
+class AlarmasFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val value = arguments!!.getString("Key")
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about_us, container, false)
+        return inflater.inflate(R.layout.fragment_alarmas, container, false)
     }
 }

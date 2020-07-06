@@ -6,9 +6,9 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
-import com.example.senthil.kotlin_tablayout.Fragment.AboutUsFragment
-import com.example.senthil.kotlin_tablayout.Fragment.ContactUsFragment
-import com.example.senthil.kotlin_tablayout.Fragment.HomeFragment
+import com.example.senthil.kotlin_tablayout.Fragment.AlarmasFragment
+import com.example.senthil.kotlin_tablayout.Fragment.DatosFragment
+import com.example.senthil.kotlin_tablayout.Fragment.RegistroFragment
 import kotlinx.android.synthetic.main.activity_tab_layout.*
 
 class TabLayoutActivity : AppCompatActivity() {
@@ -18,15 +18,14 @@ class TabLayoutActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tab_layout)
 
         setupViewPager(viewpager)
-
         tabs!!.setupWithViewPager(viewpager)
     }
 
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(HomeFragment(),"Registro")
-        adapter.addFragment(AboutUsFragment(), "Alarmas")
-        adapter.addFragment(ContactUsFragment(), "Datos")
+        adapter.addFragment(RegistroFragment(),"Registro")
+        adapter.addFragment(AlarmasFragment(), "Alarmas")
+        adapter.addFragment(DatosFragment(), "Datos")
         viewPager.adapter = adapter
     }
 
